@@ -1,0 +1,35 @@
+# 4.11
+Training weights
+        class weights(LeggedRobotCfg.rewards.weights):
+            # * Regularization rewards * #
+            actuation_rate = 1e-3
+            actuation_rate2 = 1e-4
+            torques = 1e-4
+            dof_vel = 1e-3
+            lin_vel_z = 1e-1
+            ang_vel_xy = 1e-2
+            dof_pos_limits = 10
+            torque_limits = 1e-2
+
+            # * Floating base rewards * #
+            base_height = 1.
+            base_heading = 3.
+            base_z_orientation = 1.
+            tracking_lin_vel_world = 4.
+
+            # * Stepping rewards * #
+            joint_regularization = 1.
+            contact_schedule = 3.
+            # contact_ankle_ease = 1e-4
+            foot_natrual_contact = 2.
+Summary:
+- 容易随机跳跃，步伐的schedule并不是很好；
+- 喜欢拖在地上 -> 没有projected导致趋向于 0 base_height
+
+Todo
+- 修改natural奖励，奖励仰角，惩罚俯角
+- 改善schedule问题，尝试混合训练 (先5000平地)
+
+4.11晚训练模型：加入ankle ease，提升natural的权重；
+- 结果：效果不好。ankle_ease的加入会让机器人的脚软
+       但是混合训练模型的效果不错，机器人在斜坡上走路姿态变好

@@ -1,0 +1,103 @@
+.
+├── LICENSE
+├── README.md
+├── gym
+│   ├── __init__.py
+│   ├── envs
+│   │   ├── __init__.py
+│   │   ├── base
+│   │   │   ├── base_config.py
+│   │   │   ├── base_task.py
+│   │   │   ├── fixed_robot.py
+│   │   │   ├── fixed_robot_config.py
+│   │   │   ├── legged_robot.py
+│   │   │   └── legged_robot_config.py
+│   │   ├── cartpole
+│   │   │   ├── cartpole.py
+│   │   │   └── cartpole_config.py
+│   │   ├── humanoid
+│   │   │   ├── humanoid_controller_sloped.py
+│   │   │   ├── humanoid_controller_sloped_config.py
+│   │   │   ├── humanoid_utils.py
+│   │   │   └── jacobian.py
+│   │   └── pendulum
+│   │       ├── pendulum.py
+│   │       └── pendulum_config.py
+│   ├── scripts
+│   │   ├── play.py
+│   │   ├── plotting
+│   │   │   ├── __init__.py
+│   │   │   ├── visualize_csv.py
+│   │   │   └── visualize_npz.py
+│   │   └── train.py
+│   ├── tests
+│   │   └── test_env.py
+│   └── utils
+│       ├── __init__.py
+│       ├── augmentor.py
+│       ├── gait_scheduler.py
+│       ├── helpers.py
+│       ├── interfaces
+│       │   ├── GamepadInterface.py
+│       │   ├── KeyboardInterface.py
+│       │   └── interfaces.py
+│       ├── logger.py
+│       ├── logging_and_saving
+│       │   ├── AnalysisRecorder.py
+│       │   ├── VisualizationRecorder.py
+│       │   ├── __init__.py
+│       │   ├── local_code_save_helper.py
+│       │   └── wandb_singleton.py
+│       ├── math.py
+│       ├── task_registry.py
+│       ├── terrain.py
+│       └── wandb_helper.py
+├── launch.sh
+├── learning
+│   ├── __init__.py
+│   ├── algorithms
+│   │   ├── __init__.py
+│   │   └── ppo.py
+│   ├── env
+│   │   ├── __init__.py
+│   │   └── vec_env.py
+│   ├── modules
+│   │   ├── __init__.py
+│   │   ├── actor.py
+│   │   ├── actor_critic.py
+│   │   ├── critic.py
+│   │   └── utils
+│   │       ├── __init__.py
+│   │       ├── neural_net.py
+│   │       └── running_mean_std.py
+│   ├── runners
+│   │   ├── __init__.py
+│   │   └── on_policy_runner.py
+│   ├── storage
+│   │   ├── __init__.py
+│   │   ├── base_storage.py
+│   │   └── rollout_storage.py
+│   └── utils
+│       ├── __init__.py
+│       ├── logging.py
+│       └── utils.py
+├── mbfp_note.txt
+├── requirements.txt
+├── resources
+│   ├── media
+│   │   ├── example_humanoid_running.gif
+│   │   └── fyp_pic.png
+│   └── robots
+│       ├── cartpole
+│       │   └── urdf
+│       ├── humanoid
+│       │   ├── trajectories
+│       │   └── urdf
+│       ├── pendulum
+│       │   └── urdf
+│       └── rom
+│           └── urdf
+├── setup.py
+└── tree.txt
+
+33 directories, 68 files
