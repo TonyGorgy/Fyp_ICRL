@@ -98,15 +98,4 @@ python gym/scripts/play.py --task=humanoid_controller_sloped -checkpoint=logs/..
 2. If you have multiple storages of this repository, and find `The IssacGym run in another config of the other repository`remember do: `export PYTHONPATH=$PYTHONPATH:~/issacgym/python`and
 `export PYTHONPATH=$(pwd)`. However, the best way is creating new branch when you fix the codes.
 ---
-### Acknowledgement ###
-We would appreciate it if you would cite it in academic publications:
-```
-@inproceedings{lee2024integrating,
-  title={Integrating model-based footstep planning with model-free reinforcement learning for dynamic legged locomotion},
-  author={Lee, Ho Jae and Hong, Seungwoo and Kim, Sangbae},
-  booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={11248--11255},
-  year={2024},
-  organization={IEEE}
-}
-```
+
