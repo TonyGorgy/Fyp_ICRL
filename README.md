@@ -99,10 +99,9 @@ python gym/scripts/play.py --task=humanoid_controller_sloped -checkpoint=logs/..
 ```
  - `--checkpoint=`: CHECKPOINT: The path of the loaded checkpoint saved in `./logs` folder.
  - `--terrain`: The terrain type for simulation. random_uniform/sloped/stepping_stones.
-  - `--mesh_type=`: The mesh type of the terrain. `Plane` requires the minimal compute resources, while in this project we applied `heightfield`. 
-   - `--difficulty=`: The difficulty of the terrain (Float 0-1).
-  - `--difficulty=`: The difficulty of the terrain (Float 0-1).
-  - `--terrain=`: The terrain type to train or play (sloped, random_uniform, stepping_stones). If the mesh type is `plane`, the terrain type is setted to `plane` in any situation.
+ - `--mesh_type=`: The mesh type of the terrain. `Plane` requires the minimal compute resources, while in this project we applied `heightfield`. 
+ - `--difficulty=`: The difficulty of the terrain (Float 0-1).
+ - `--terrain=`: The terrain type to train or play (sloped, random_uniform, stepping_stones). If the mesh type is `plane`, the terrain type is setted to `plane` in any situation.
 
 ---
 ### Troubleshooting ###

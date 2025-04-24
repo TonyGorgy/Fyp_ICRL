@@ -1,1 +1,2 @@
-./gym/envs/humanoid/humanoid_controller_sloped
+# Fixed files
+gym/envs/humanoid/humanoid_controller_sloped.py
