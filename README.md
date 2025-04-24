@@ -78,10 +78,6 @@ Or you can adjust the items in `.vscode/launch.json`, which is corresponding to 
 
 
 ### Play (a trained policy) ###  
-<p align="center">
-  <img src="./resources/media/example_humanoid_running.gif" alt="Humanoid Running" />
-</p>
-
 ```bash
 python gym/scripts/play.py --task=humanoid_controller_sloped -checkpoint=logs/.../D-H-M.pt
 ```
@@ -91,6 +87,23 @@ python gym/scripts/play.py --task=humanoid_controller_sloped -checkpoint=logs/..
    - `--difficulty=`: The difficulty of the terrain (Float 0-1).
   - `--difficulty=`: The difficulty of the terrain (Float 0-1).
   - `--terrain=`: The terrain type to train or play (sloped, random_uniform, stepping_stones). If the mesh type is `plane`, the terrain type is setted to `plane` in any situation.
+
+- Experiment of running on the flat at `3.9 m/s`
+<p align="center">
+  <img src="./resources/media/example_humanoid_running.gif" alt="Humanoid Running" width="400px" />
+</p>
+
+- Experiment of running on the RUT at `3.0 m/s`
+<p align="center">
+  <img src="./resources/media/example_random_running.gif" alt="Humanoid Running" width="400px" />
+</p>
+
+- Experiment of jumping from the slope at `3.0 m/s`
+<p align="center">
+  <img src="./resources/media/example_slope_jump.gif" alt="Humanoid Running" width="400px" />
+</p>
+
+
 
 ---
 ### Troubleshooting ###
