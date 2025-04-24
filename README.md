@@ -3,9 +3,25 @@
   <img src="./resources/media/fyp_pic.png" alt="Humanoid Running" />
 </p>
 
+
+### Title:  Adaptive Motion Planning and Control for Biped Robots in Dynamic Environments <br/> 
 The repository is an open-sourced code for the final year project of UESTC, 2025. 
 
-#### Title:  Adaptive Motion Planning and Control for Biped Robots in Dynamic Environments <br/> 
+- Experiment of running on the flat at `3.9 m/s`
+<p align="center">
+  <img src="./resources/media/example_humanoid_running.gif" alt="Humanoid Running" width="400px" />
+</p>
+
+- Experiment of running on the RUT at `3.0 m/s`
+<p align="center">
+  <img src="./resources/media/example_random_running.gif" alt="Humanoid Running" width="400px" />
+</p>
+
+- Experiment of jumping from the slope at `3.0 m/s`
+<p align="center">
+  <img src="./resources/media/example_slope_jump.gif" alt="Humanoid Running" width="400px" />
+</p>
+
 
 ### Installation ###
 1. Create a new python virtual env with python 3.8 using Anaconda
@@ -87,23 +103,6 @@ python gym/scripts/play.py --task=humanoid_controller_sloped -checkpoint=logs/..
    - `--difficulty=`: The difficulty of the terrain (Float 0-1).
   - `--difficulty=`: The difficulty of the terrain (Float 0-1).
   - `--terrain=`: The terrain type to train or play (sloped, random_uniform, stepping_stones). If the mesh type is `plane`, the terrain type is setted to `plane` in any situation.
-
-- Experiment of running on the flat at `3.9 m/s`
-<p align="center">
-  <img src="./resources/media/example_humanoid_running.gif" alt="Humanoid Running" width="400px" />
-</p>
-
-- Experiment of running on the RUT at `3.0 m/s`
-<p align="center">
-  <img src="./resources/media/example_random_running.gif" alt="Humanoid Running" width="400px" />
-</p>
-
-- Experiment of jumping from the slope at `3.0 m/s`
-<p align="center">
-  <img src="./resources/media/example_slope_jump.gif" alt="Humanoid Running" width="400px" />
-</p>
-
-
 
 ---
 ### Troubleshooting ###
